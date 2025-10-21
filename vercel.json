@@ -13,7 +13,9 @@
       "use": "@vercel/static-build",
       "config": {
         "distDir": "build",
-        "nodeVersion": "22.x"
+        "nodeVersion": "22.x",
+        "installCommand": "cd client && npm install",
+        "buildCommand": "cd client && npm run build"
       }
     }
   ],
